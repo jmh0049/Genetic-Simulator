@@ -1,5 +1,5 @@
 # Genetic-Simulator
-Senior Design project spring 2014
+Senior Design project spring 2015
 
 Just going to use this for initial setup.
 
