@@ -6,6 +6,7 @@ class JythonTopo(Topology):
 		pass
 	
 	def createTree(list):
+		self.setMatrixLength(len(list))
 		for i in range(len(list)):
 			dominantSeq = list[i]
 			subdominateSeqs = []
@@ -18,7 +19,6 @@ class JythonTopo(Topology):
 				
 			aligned = alignment.alignSequences(dominantSeq, subdominateSeqs)
 			distance = alignment.getDistanceMatrix(dominantSeq, aligned)
-			self.setMatrixLength(len(list))
 			self.sequenceToMatrix(i, distance)
 		
 		graph = self.matrixToGraph()
