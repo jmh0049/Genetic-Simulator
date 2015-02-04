@@ -7,7 +7,7 @@ public class Topology {
    
    int[][] dMatrix;
    
-   public Topology(int length) {
+   public void setMatrixLength(int length) {
       dMatrix =  new int[length][length];
    }
    
